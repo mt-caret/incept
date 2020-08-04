@@ -1,0 +1,36 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.33.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b2a99f7799c7693057debf0ac6e2b8c744ec7465e03757021fcff7441fbb1d8a
+
+name:           incept
+version:        0.1.0.0
+category:       Web
+homepage:       https://github.com/mt-caret/incept#readme
+author:         mt-caret
+maintainer:     mtakeda.enigsol@gmail.com
+copyright:      2020 mt-caret
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    README.md
+
+executable suimin
+  main-is: Main.hs
+  other-modules:
+      Paths_incept
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wcompat -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints
+  build-depends:
+      asterius-prelude
+    , base
+    , containers
+    , mtl
+    , pandoc
+    , pandoc-types
+    , text
+  default-language: Haskell2010

@@ -1,0 +1,32 @@
+name:                incept
+version:             0.1.0.0
+#synopsis:
+#description:
+homepage:            https://github.com/mt-caret/incept#readme
+license:             BSD3
+author:              mt-caret
+maintainer:          mtakeda.enigsol@gmail.com
+copyright:           2020 mt-caret
+category:            Web
+extra-source-files:
+- README.md
+ghc-options:
+- -Wall
+- -Wcompat
+- -Wincomplete-record-updates
+- -Wincomplete-uni-patterns
+- -Wredundant-constraints
+
+dependencies:
+  - base
+  - text
+  - containers
+  - mtl
+  - pandoc
+  - pandoc-types
+  - asterius-prelude
+
+executables:
+  suimin:
+    source-dirs:      src
+    main:             Main.hs
